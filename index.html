@@ -117,16 +117,27 @@
                   <style>
                     .skill-mf {
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
+                    }
+                
+                    .title-s, .skill-category {
+                        font-size: 16px; /* Adjust as needed */
                     }
                 
                     .skill-category {
-                        margin-right: 30px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: baseline; /* Aligns headings on the same baseline */
+                        margin-bottom: 10px; /* Adjust spacing between lines */
+                    }
+                
+                    .skill-category h4 {
+                        margin-right: 20px; /* Adjust as needed */
                     }
                 </style>
                 
                 <div class="skill-mf">
-                    <p class="title-s">Skills</p>
+                    <div class="title-s">Skills</div>
                     <div class="skill-category">
                         <h4>Programming</h4>                    
                     </div>
@@ -146,6 +157,7 @@
                         <h4>Operating Systems</h4>                    
                     </div>
                 </div>
+                
                 
                 <div class="col-md-6">
                   <div class="about-me pt-4 pt-md-0">
