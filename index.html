@@ -293,15 +293,18 @@
     </section><!-- End work experience Section -->
 
     <script>
-      function toggleBulletPoints(element) {
-        var bulletPoints = element.parentElement.parentElement.nextElementSibling;
-        if (bulletPoints.style.display === "none") {
-          bulletPoints.style.display = "block";
-        } else {
-          bulletPoints.style.display = "none";
-        }
-      }
-    </script>
+    <script>
+  function toggleBulletPoints(element) 
+  {
+    var bulletPoints = element.parentElement.nextElementSibling;
+    if (bulletPoints.style.display === "none" || bulletPoints.style.display === "") {
+      bulletPoints.style.display = "block"
+    } else {
+      bulletPoints.style.display = "none"
+    }
+  }
+</script>
+
 
   
 
